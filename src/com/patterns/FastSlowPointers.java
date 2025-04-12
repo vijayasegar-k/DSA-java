@@ -12,11 +12,11 @@ public class FastSlowPointers {
 	
 	private static int findMid(int[] arr) {
 		int l = 0;
-		int r = arr.length-1;
+		int r = 0;
 		
-		while(l < arr.length-1 && r >= 0) {
+		while(l < arr.length-1 && r < arr.length-1) {
 			l = l+2;
-			r--;
+			r++;
 		}
 		
 		return arr[r];
